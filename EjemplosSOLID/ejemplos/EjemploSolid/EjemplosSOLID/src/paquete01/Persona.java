@@ -33,10 +33,10 @@ public class Persona {
     }
 
     public double promedioEdades(ArrayList<Persona> lista) {
-        double promedio = 0;
+        double promedio;
         double suma = 0;
         for (int i = 0; i < lista.size(); i++) {
-            suma = lista.get(i).obtenerEdad();
+            suma = suma + lista.get(i).obtenerEdad();
         }
         promedio = suma / lista.size();
         return promedio;
